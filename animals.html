@@ -1,0 +1,554 @@
+<html>
+    <head>
+        <style>
+        @gray-darker:               #444444;
+        @gray-dark:                 #696969;
+        @gray:                      #999999;
+        @gray-light:                #cccccc;
+        @gray-lighter:              #ececec;
+        @gray-lightest:             lighten(@gray-lighter,4%);
+
+
+        html {
+          background-color: #ffe9e9;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40pt;
+            font-weight: normal;
+        }
+
+        body {
+          font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          letter-spacing: 0;
+          padding: 1rem;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          -moz-font-feature-settings: "liga" on;
+          width: 900px;
+          margin: auto;
+        }
+
+        .cards {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .cards__item {
+          background-color: white;
+          border-radius: 0.25rem;
+          box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+          overflow: hidden;
+          padding: 1rem;
+          margin: 50px;
+        }
+
+        .card__title {
+          color: @gray-dark;
+          font-size: 1.25rem;
+          font-weight: 300;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+
+        .card__text {
+          flex: 1 1 auto;
+          font-size: 0.95rem;
+          line-height: 2;
+          margin-bottom: 1.25rem;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>My Animal Repository</h1>
+        <ul class="cards">
+            <li class="cards__item">
+  <div class="card__title">African Wild Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Africa<br/>
+    <strong>Diet:</strong> Carnivore<br/>
+    <strong>Group:</strong> Mammal<br/>
+    <strong>Lifespan:</strong> 10 - 13 years<br/>
+    <strong>Average litter size:</strong> 8<br/>
+    <strong>Common name:</strong> African Wild Dog<br/>
+    <strong>Slogan:</strong> Also known as the painted dog!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">American Bulldog</div>
+  <p class="card__text">
+    <strong>Location:</strong> North-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Dog<br/>
+    <strong>Training:</strong> Hard<br/>
+    <strong>Temperament:</strong> Assertive but loyal and friendly<br/>
+    <strong>Distinctive feature:</strong> Small pendant shaped ears and strong body<br/>
+    <strong>Average litter size:</strong> 8<br/>
+    <strong>Common name:</strong> American Bulldog<br/>
+    <strong>Slogan:</strong> Can jump up to 6ft high!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">American Dog Tick</div>
+  <p class="card__text">
+    <strong>Location:</strong> North-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Ticks<br/>
+    <strong>Lifespan:</strong> 1-5 years<br/>
+    <strong>Common name:</strong> Dog tick<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">American Eskimo Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Dog<br/>
+    <strong>Lifespan:</strong> 13 - 15 years<br/>
+    <strong>Training:</strong> Fairly easy<br/>
+    <strong>Temperament:</strong> Playful and smart<br/>
+    <strong>Distinctive feature:</strong> Bright, white coat and pointed ears<br/>
+    <strong>Average litter size:</strong> 5<br/>
+    <strong>Common name:</strong> American Eskimo Dog<br/>
+    <strong>Slogan:</strong> The American Eskimo has splendid all white fur and an upturned tail<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Anatolian Shepherd Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Guard<br/>
+    <strong>Lifespan:</strong> 11-13 years<br/>
+    <strong>Training:</strong> Should be trained from an early age and respond best to motivational training as they can be dominant and stubborn<br/>
+    <strong>Temperament:</strong> Courageous, powerful, protective, calm and devoted.<br/>
+    <strong>Average litter size:</strong> 9<br/>
+    <strong>Common name:</strong> Anatolian Shepherd Dog<br/>
+    <strong>Slogan:</strong> Guards it's master's flocks!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Appenzeller Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Sennenhund<br/>
+    <strong>Lifespan:</strong> 12 – 14 years<br/>
+    <strong>Training:</strong> Should be trained from an early age and respond best to firm and consistent training<br/>
+    <strong>Temperament:</strong> Energetic and alert<br/>
+    <strong>Average litter size:</strong> 6<br/>
+    <strong>Common name:</strong> Appenzeller Dog<br/>
+    <strong>Slogan:</strong> Herding dog by nature!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Australian Bulldog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Oceania<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 12 years<br/>
+    <strong>Temperament:</strong> Intelligent, fiercely loyal, and sweet-natured<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Australian Cattle Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Oceania<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Herd Dog<br/>
+    <strong>Lifespan:</strong> 13-15 years<br/>
+    <strong>Training:</strong> Should be trained from an early age and respond best to firm and fair training<br/>
+    <strong>Temperament:</strong> Strong minded yet loyal and loving<br/>
+    <strong>Average litter size:</strong> 5<br/>
+    <strong>Common name:</strong> Australian Cattle Dog<br/>
+    <strong>Slogan:</strong> High energy levels and active minds!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Australian Kelpie Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Oceania<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Herd Dog<br/>
+    <strong>Lifespan:</strong> 10 to 13 years<br/>
+    <strong>Training:</strong> Should be trained from an early age and should be firm but fair<br/>
+    <strong>Temperament:</strong> Alert and intelligent<br/>
+    <strong>Average litter size:</strong> 5<br/>
+    <strong>Common name:</strong> Australian Kelpie Dog<br/>
+    <strong>Slogan:</strong> Friendly, intelligent and energetic!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Basenji Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Africa<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 12-14 years<br/>
+    <strong>Training:</strong> Should be trained from an early age as their independent nature can make them stubborn<br/>
+    <strong>Temperament:</strong> Loyal, stubborn, and affectionate<br/>
+    <strong>Average litter size:</strong> 5<br/>
+    <strong>Common name:</strong> Basenji Dog<br/>
+    <strong>Slogan:</strong> Alert, affectionate and energetic!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Bernese Mountain Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Sennenhund<br/>
+    <strong>Training:</strong> Should be trained from an early age due to their large size<br/>
+    <strong>Temperament:</strong> Intelligent, friendly and alert<br/>
+    <strong>Average litter size:</strong> 7<br/>
+    <strong>Common name:</strong> Bernese Mountain Dog<br/>
+    <strong>Slogan:</strong> Very loyal, faithful and affectionate!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Blue Lacy Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> North-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Herd<br/>
+    <strong>Training:</strong> Should be trained from an early age as they can become dominant<br/>
+    <strong>Temperament:</strong> Intelligent, active and alert<br/>
+    <strong>Average litter size:</strong> 5<br/>
+    <strong>Common name:</strong> Blue Lacy Dog<br/>
+    <strong>Slogan:</strong> Originated in Texas in the mid 1800s!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Bolognese Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Gun Dog<br/>
+    <strong>Training:</strong> Should be trained from an early age due to their hyperactive nature<br/>
+    <strong>Temperament:</strong> Devoted and lively, yet docile<br/>
+    <strong>Average litter size:</strong> 4<br/>
+    <strong>Common name:</strong> Bolognese Dog<br/>
+    <strong>Slogan:</strong> From the northern Italian city of Bologna!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Boxer Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Mastiff<br/>
+    <strong>Training:</strong> Should be trained from an early age due to their independent nature<br/>
+    <strong>Temperament:</strong> Intelligent, fearless and strong<br/>
+    <strong>Average litter size:</strong> 8<br/>
+    <strong>Common name:</strong> Boxer Dog<br/>
+    <strong>Slogan:</strong> Bright, energetic and playful!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Brown Dog Tick</div>
+  <p class="card__text">
+    <strong>Location:</strong> Africa<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Ticks<br/>
+    <strong>Lifespan:</strong> 3-18 months<br/>
+    <strong>Common name:</strong> Dog tick<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Bulldog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Mastiff<br/>
+    <strong>Training:</strong> Should be trained from an early age due to their stubborn nature<br/>
+    <strong>Temperament:</strong> Gentle, calm and affectionate<br/>
+    <strong>Average litter size:</strong> 10<br/>
+    <strong>Common name:</strong> Bulldog<br/>
+    <strong>Slogan:</strong> Friendly, loving and docile!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Canaan Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Asia<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> South<br/>
+    <strong>Lifespan:</strong> 15 years<br/>
+    <strong>Common name:</strong> Canaan Dog<br/>
+    <strong>Slogan:</strong> Has a strong survival instinct!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Canadian Eskimo Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> North-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 10 to 15 years<br/>
+    <strong>Temperament:</strong> Affectionate, loving, loyal<br/>
+    <strong>Common name:</strong> Canadian Eskimo Dog<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Carolina Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> North-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> South<br/>
+    <strong>Lifespan:</strong> 19 years<br/>
+    <strong>Common name:</strong> Carolina Dog<br/>
+    <strong>Slogan:</strong> Wild dog breed discovered in the 1970s!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Catalan Sheepdog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 13 years<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Chinese Crested Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Asia<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> South<br/>
+    <strong>Lifespan:</strong> 13 years<br/>
+    <strong>Common name:</strong> Chinese Crested Dog<br/>
+    <strong>Slogan:</strong> A hairless breed of dog!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Czechoslovakian Wolfdog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 10-15 years<br/>
+    <strong>Temperament:</strong> Intelligent, athletic, and loyal<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Dog Tick</div>
+  <p class="card__text">
+    <strong>Location:</strong> Africa<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 2-3 years<br/>
+    <strong>Common name:</strong> Dog tick<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Dogo Argentino</div>
+  <p class="card__text">
+    <strong>Location:</strong> South-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Mastiff<br/>
+    <strong>Lifespan:</strong> 13 years<br/>
+    <strong>Common name:</strong> Dogo Argentino<br/>
+    <strong>Slogan:</strong> Loyal and affectionate to their family!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Dogue De Bordeaux</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Mastiff<br/>
+    <strong>Lifespan:</strong> 8 years<br/>
+    <strong>Common name:</strong> Dogue De Bordeaux<br/>
+    <strong>Slogan:</strong> Extremely loyal and devoted to it's master!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">English Bulldog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 8-10 years<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Entlebucher Mountain Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Sennenhund<br/>
+    <strong>Lifespan:</strong> 12 years<br/>
+    <strong>Temperament:</strong> Intelligent, affectionate, stubborn<br/>
+    <strong>Common name:</strong> Entlebucher Mountain Dog<br/>
+    <strong>Slogan:</strong> Native to parts of the Swiss Alps!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Eskimo Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> North-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> North<br/>
+    <strong>Lifespan:</strong> 14 years<br/>
+    <strong>Common name:</strong> Eskimo Dog<br/>
+    <strong>Slogan:</strong> Takes pure delight in cold weather!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Estrela Mountain Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Guard<br/>
+    <strong>Lifespan:</strong> 16 years<br/>
+    <strong>Common name:</strong> Estrela Mountain Dog<br/>
+    <strong>Slogan:</strong> Very protective and stubborn!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Formosan Mountain Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Asia<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 10-13 years<br/>
+    <strong>Temperament:</strong> Loyal, intelligent, and protective<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">French Bulldog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Mastiff<br/>
+    <strong>Lifespan:</strong> 10 to 12 years<br/>
+    <strong>Temperament:</strong> Affectionate, friendly, attention-demanding<br/>
+    <strong>Common name:</strong> French Bulldog<br/>
+    <strong>Slogan:</strong>  French bulldogs are known to be very sensitive, harboring emotions that they love to express<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Greater Swiss Mountain Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Sennenhund<br/>
+    <strong>Lifespan:</strong> 12 years<br/>
+    <strong>Common name:</strong> Greater Swiss Mountain Dog<br/>
+    <strong>Slogan:</strong> Protective and gentle by nature!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Greenland Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> North-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 12 years<br/>
+    <strong>Common name:</strong> Greenland Dog<br/>
+    <strong>Slogan:</strong> Strong and speedy breed of dog!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Icelandic Sheepdog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 12-14 years<br/>
+    <strong>Temperament:</strong> Playful, affectionate, and curious<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Moscow Watchdog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Eurasia<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 9 to 11 years<br/>
+    <strong>Temperament:</strong> Gentle and powerful<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Northern Inuit Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Carnivore<br/>
+    <strong>Lifespan:</strong> 12 to 15 years<br/>
+    <strong>Temperament:</strong> Intelligent, friendly, and loyal<br/>
+    <strong>Common name:</strong> Northern Inuit Dog<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Old English Sheepdog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Group:</strong> Herd<br/>
+    <strong>Lifespan:</strong> 12 years<br/>
+    <strong>Common name:</strong> Old English Sheepdog<br/>
+    <strong>Slogan:</strong> Intelligent, sociable and playful!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Polish Lowland Sheepdog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 12 to 14 years<br/>
+    <strong>Temperament:</strong> Playful and a quick learner<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Prairie Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Central-America<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 3-4 years on average<br/>
+    <strong>Common name:</strong> Prairie Dog<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Raccoon Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Asia<br/>
+    <strong>Diet:</strong> Carnivore<br/>
+    <strong>Lifespan:</strong> 3 - 8 years<br/>
+    <strong>Distinctive feature:</strong> Dexterous front paws and pointed snout<br/>
+    <strong>Average litter size:</strong> 8<br/>
+    <strong>Slogan:</strong> The only hibernating canine!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Russian Bear Dog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Eurasia<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+    <strong>Lifespan:</strong> 10 to 12 years<br/>
+    <strong>Temperament:</strong> Bold and Fearless<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Saarloos Wolfdog</div>
+  <p class="card__text">
+    <strong>Location:</strong> Europe<br/>
+    <strong>Diet:</strong> Omnivore<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Spiny Dogfish</div>
+  <p class="card__text">
+    <strong>Location:</strong> Ocean<br/>
+    <strong>Diet:</strong> Carnivore<br/>
+    <strong>Lifespan:</strong> Average of 20 to 24 years, but can live up to 50 years<br/>
+    <strong>Common name:</strong> Spiny Dogfish<br/>
+    <strong>Slogan:</strong> Found in ocean waters worldwide!<br/>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Viper shark (dogfish)</div>
+  <p class="card__text">
+    <strong>Location:</strong> Ocean<br/>
+    <strong>Diet:</strong> Carnivore<br/>
+    <strong>Common name:</strong> Viper dogfish<br/>
+  </p>
+</li>
+
+        </ul>
+    </body>
+</html>
