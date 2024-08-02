@@ -2,10 +2,13 @@ import data_fetcher
 
 def generate_animal_html(data):
     """
-    Generate HTML for displaying animal data in a list format.
-    
+    Generate an HTML string for the animal data provided.
+
     Args:
-        data (list): List of animal data fetched from the API.
+        data (list): A list of dictionaries, each representing an animal.
+
+    Returns:
+        str: The HTML string representing the animals.
     """
     output = ''
     for animal in data:
@@ -43,13 +46,13 @@ def generate_animal_html(data):
 
 def update_html_template(template_path, output_path, animals_html):
     """
-    Update an existing HTML template with the generated animal information.
-    
+    Update the HTML template with the provided animal data.
+
     Args:
-        template_path (str): Path to the existing HTML template.
-        output_path (str): Path to the updated HTML template.
-        animals_html (str): HTML content for the animals.
-    """    
+        template_path (str): The path to the HTML template file.
+        output_path (str): The path to save the updated HTML file.
+        animals_html (str): The HTML string representing the animals.
+    """
     with open(template_path, "r", encoding="utf-8") as file:
         html_content = file.read()
     
@@ -58,15 +61,11 @@ def update_html_template(template_path, output_path, animals_html):
     with open(output_path, "w", encoding="utf-8") as file:
         file.write(html_content)
 
-    print("Website has been generated successfully!")
+    print("Website was successfully generated to the file animals.html!")
 
 def main():
-    """This script generates an HTML page with animal information.
-
-    It prompts the user to enter an animal name, fetches the animal data from
-    the API, and then generates the HTML content based on the fetched data.
-    Finally, it updates the existing HTML template with the generated content.
-    
+    """
+    Main function to fetch data, generate animal HTML, and update the HTML template.
     """
     animal_name = input("Please enter an animal: ")
     animals_data = data_fetcher.fetch_data(animal_name)
@@ -80,3 +79,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
