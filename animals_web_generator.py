@@ -44,6 +44,7 @@ def generate_animal_html(data):
         output += '</li>\n'
     return output
 
+
 def update_html_template(template_path, output_path, animals_html):
     """
     Update the HTML template with the provided animal data.
@@ -63,6 +64,7 @@ def update_html_template(template_path, output_path, animals_html):
 
     print("Website was successfully generated to the file animals.html!")
 
+
 def main():
     """
     Main function to fetch data, generate animal HTML, and update the HTML template.
@@ -76,6 +78,7 @@ def main():
         animals_html = generate_animal_html(animals_data)
     
     update_html_template('animals_template.html', 'animals.html', animals_html)
+
 
 if __name__ == "__main__":
     main()
